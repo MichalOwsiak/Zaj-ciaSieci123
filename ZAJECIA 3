@@ -1,0 +1,812 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOtlXQYafSdl8ruB83IgNxP",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MichalOwsiak/Zaj-ciaSieci123/blob/123456/ZAJECIA%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "MoxBLgTri_m5",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "00778e09-e1ba-4fb9-cf47-beab22a13a6d"
+      },
+      "source": [
+        "Pirates = [\"The Curse of the Black Pearl\", \"Dead Man's Chest\", \"At World's End\"]\n",
+        "Pirates"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['The Curse of the Black Pearl', \"Dead Man's Chest\", \"At World's End\"]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "HHlBJenKjU5n",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "c654c3d7-531d-4413-e163-a0e915b5666f"
+      },
+      "source": [
+        "len(Pirates) #len służy do policzenia ilość pozycji w danej liście"
+      ],
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "8"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "54a2iqFmjil_",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 153
+        },
+        "outputId": "b6a94e7d-2424-476b-8556-addf4872c696"
+      },
+      "source": [
+        "Pirates.append ('latający holender666') #append dorzuca nam wartość na końcu listy, a insert we wskazanym miejscu\n",
+        "Pirates"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['The Curse of the Black Pearl',\n",
+              " \"Dead Man's Chest\",\n",
+              " \"At World's End\",\n",
+              " 'latający holender',\n",
+              " 'latający holender666',\n",
+              " 'latający holender666',\n",
+              " 'latający holender666',\n",
+              " 'latający holender666']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lXWbOV39kLDr",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "Pirates.remove ('|latający holender') #usuwanie czegoś"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "WRDeCK7WlGgQ",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "Pirates.insert (4, \"Sparrow\") #wrzucamy sobie jakas zmienna na to miejsce na ktore chcemy, pamietajmy ze PYTHON LICZY OD 0"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Lu_rTWgLlhNp",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 170
+        },
+        "outputId": "61432b0b-30ec-47d2-c903-a369f7d674b7"
+      },
+      "source": [
+        "Pirates"
+      ],
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['The Curse of the Black Pearl',\n",
+              " \"Dead Man's Chest\",\n",
+              " \"At World's End\",\n",
+              " 'latający holender',\n",
+              " 'Sparrow',\n",
+              " 'latający holender666',\n",
+              " 'latający holender666',\n",
+              " 'latający holender666',\n",
+              " 'latający holender666']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 20
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pHQQ-Xsyls3T",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "3fddc78c-8959-4195-d4a6-b98ccf92cf98"
+      },
+      "source": [
+        "Pirates.index (\"latający holender\") #sprawdzamy na której pozycji jest nasz element\n"
+      ],
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XcGWESldmV5c",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "11af8af8-8ed2-48e2-d2c7-feddef3ec74d"
+      },
+      "source": [
+        "\"Sparrow\" in Pirates #tak sprawdzamy czy jaki element jest w naszej liście\n"
+      ],
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 23
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "SMnG_ZStmiIF",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "9525aae0-2383-43db-b537-886ed44b6032"
+      },
+      "source": [
+        "type (Pirates)"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "list"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 25
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TPaQlPyvnGQv",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 129
+        },
+        "outputId": "8a27eec6-2fa7-4cea-8277-9c9359bb3ec6"
+      },
+      "source": [
+        "if \"Przejczowska\" : \n",
+        "  kawa pita\n",
+        "  else:\n",
+        "    mało snu \n"
+      ],
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-26-eb64a21bcd08>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    kawa pita\u001b[0m\n\u001b[0m            ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ljG59y0InYjn",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "4b9be876-061e-4a38-cb57-eba6f57ec545"
+      },
+      "source": [
+        "x = input(\"Podaj swoje imię: \")\n",
+        "print(\"Hello, \" + x)\n"
+      ],
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Podaj swoje imię: Michał\n",
+            "Hello, Michał\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_1oYCc5in5u4",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "01d499e6-0494-481c-8d6a-2d344afdb3ba"
+      },
+      "source": [
+        "org = [\"Dog Rescue\", \"Animal Patrol\", \"Straż Ochrony Zwierząt Animax\"]\n",
+        "print(org)\n"
+      ],
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['Dog Rescue', 'Animal Patrol', 'Straż Ochrony Zwierząt Animax']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zNUSvZmSoSHz",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "9cde1123-a9c1-4dd6-ef96-ae7fd2ba0607"
+      },
+      "source": [
+        "x=0\n",
+        "for i in org:\n",
+        "    print(\"element listy o indeksie\", x, \" : \", org[x])\n",
+        "    x+=1\n"
+      ],
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "element listy o indeksie 0  :  Dog Rescue\n",
+            "element listy o indeksie 1  :  Animal Patrol\n",
+            "element listy o indeksie 2  :  Straż Ochrony Zwierząt Animax\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "KKEYa4VQoi8S",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "642a5877-8292-4335-c4be-dd5f44afe8d7"
+      },
+      "source": [
+        "x = input(\"Podaj nazwę organizacji prozwierzęcej, aby sprawdzić, czy znajduje się na liście \")\n",
+        "\n",
+        "if x in org:\n",
+        "    print(x,\" jest na liście organizacji\")\n",
+        "else:\n",
+        "    print(x, \"nie ma na liście organizacji\")\n"
+      ],
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Podaj nazwę organizacji prozwierzęcej, aby sprawdzić, czy znajduje się na liście death plus\n",
+            "death plus nie ma na liście organizacji\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "t9bVA5_joz-S",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "73bd1999-534c-4d96-ec62-9e28d8d4916e"
+      },
+      "source": [
+        "type (org)\n"
+      ],
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "list"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 35
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "AUdfTKuxpANw",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#ĆWICZENIE NUMERO UNO MOZARELLA GALBANI\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xYjb9aHqpGmJ",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "DC = [\"Green Arrow\", \"Flash\", \"Iron Man\", \"Batman\"] #tworzymy liste\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "UvLqImQZpWpv",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "531594a1-581e-4fe5-f541-547ff3a9dd4a"
+      },
+      "source": [
+        "DC"
+      ],
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Green Arrow', 'Flash', 'Iron Man', 'Batman']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qv6zKPGCpZ0J",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "510c8d85-3b6d-4b89-b6dc-d29cb494bbc3"
+      },
+      "source": [
+        "len(DC) #liczymy ilosc pozycji w liscie"
+      ],
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ucmIdhCZpiO8",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "be21bb99-beff-48b6-e8fe-fc7bfb13a28c"
+      },
+      "source": [
+        "DC.index (\"Iron Man\") #sprawdzamy na której pozycji znajduje sie IRON MAN"
+      ],
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "RVpeK9dPp15k",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "DC.remove (\"Iron Man\") #usuwamy IRON MANA niczym thanos"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "x5-aop3nqEaf",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "fbc49288-7866-4b9c-fb33-6b8d24038c45"
+      },
+      "source": [
+        "len (DC) #liczymy liste raz jeszcze"
+      ],
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 42
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "f5XSkdHUqHli",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "DC.append (\"Batman\")"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "slaxGhaAqSC9",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "DC.remove (\"Batman\")"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LZtzRIE1qdtR",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "da71aa20-2d9f-4741-d0d4-3ed3f1f56a4a"
+      },
+      "source": [
+        "DC"
+      ],
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Green Arrow', 'Flash', 'Batman']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 46
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Zwd0wW2oqisQ",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "DC.append (\"Superman\")"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zRZi6R7Qqp8M",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "d6335f13-92b9-421e-adbc-b6269122c591"
+      },
+      "source": [
+        "DC"
+      ],
+      "execution_count": 48,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Green Arrow', 'Flash', 'Batman', 'Superman']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 48
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "EX7ftZhYqtvE",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "DC.insert (3, \"Joker\")"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YEW-NiPEq05Y",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "2d58ed64-7524-4fc6-ce38-872a6d2fca7b"
+      },
+      "source": [
+        "DC"
+      ],
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Green Arrow', 'Flash', 'Batman', 'Joker', 'Superman']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 51
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lLID0u6Gq4D7",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "if \"Green Arrow\" in DC: #JESLI NA LISCIE DC JEST ZIELONA STRZALA TO DODAJ BLACK CANNARY\n",
+        "  DC.append (\"Black Cannary\")\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ce7-nCUnrJUY",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "50731286-99b4-4f78-aa0e-3c3975bbeb76"
+      },
+      "source": [
+        "DC"
+      ],
+      "execution_count": 56,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Green Arrow', 'Flash', 'Batman', 'Joker', 'Superman', 'Black Cannary']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 56
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "uw0YIg25rWsW",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
